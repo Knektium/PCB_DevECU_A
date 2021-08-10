@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name PCB_DevBoard_A-rescue)(type Legacy)(uri ${KIPRJMOD}/PCB_DevBoard_A-rescue.lib)(options "")(descr ""))
+  (lib (name ESD)(type Legacy)(uri ${KIPRJMOD}/esd.lib)(options "")(descr ""))
+)
