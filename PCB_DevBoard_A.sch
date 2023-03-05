@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:PCB_DevBoard_A-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1612,7 +1611,7 @@ $EndComp
 NoConn ~ 13200 5850
 NoConn ~ 13200 4550
 $Comp
-L Switch:SW_DPST_x2 SW1
+L PCB_DevBoard_A-rescue:SW_DPST_x2-Switch SW1
 U 1 1 5F3F7356
 P 12300 7700
 F 0 "SW1" H 12300 7935 50  0000 C CNN
