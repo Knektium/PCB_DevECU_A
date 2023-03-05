@@ -1512,17 +1512,6 @@ $EndComp
 NoConn ~ 13200 5850
 NoConn ~ 13200 4550
 $Comp
-L PCB_DevBoard_A-rescue:SW_DPST_x2-Switch SW1
-U 1 1 5F3F7356
-P 12300 7700
-F 0 "SW1" H 12300 7935 50  0000 C CNN
-F 1 "SW_DPST_x2" H 12300 7844 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 12300 7700 50  0001 C CNN
-F 3 "~" H 12300 7700 50  0001 C CNN
-	1    12300 7700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R20
 U 1 1 5F3F7AD6
 P 11800 7700
@@ -1681,4 +1670,15 @@ Wire Wire Line
 Wire Wire Line
 	9400 9700 9400 9500
 Connection ~ 9400 9500
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 64060E46
+P 12300 7700
+F 0 "JP1" H 12300 7935 50  0000 C CNN
+F 1 "Bus Termination" H 12300 7844 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12300 7700 50  0001 C CNN
+F 3 "~" H 12300 7700 50  0001 C CNN
+	1    12300 7700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
