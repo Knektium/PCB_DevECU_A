@@ -102,17 +102,6 @@ F 3 "" H 9050 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCB_DevBoard_A-rescue:Conn_01x04 J1
-U 1 1 5C167076
-P 10350 9400
-F 0 "J1" H 10350 9600 50  0000 C CNN
-F 1 "Interconnect B" H 10350 9100 50  0000 C CNN
-F 2 "DevBoard:WolletInterconnect_THT_Angeled" H 10350 9400 50  0001 C CNN
-F 3 "" H 10350 9400 50  0001 C CNN
-	1    10350 9400
-	1    0    0    -1  
-$EndComp
-$Comp
 L PCB_DevBoard_A-rescue:C C7
 U 1 1 5C16721D
 P 4100 1900
@@ -296,55 +285,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 1550 2900 1750
 Connection ~ 3200 1550
-Text GLabel 10050 9300 0    60   BiDi ~ 0
-CAN-
-Text GLabel 10050 9400 0    60   BiDi ~ 0
-CAN+
-$Comp
-L PCB_DevBoard_A-rescue:GND #PWR06
-U 1 1 5C168105
-P 9950 10050
-F 0 "#PWR06" H 9950 9800 50  0001 C CNN
-F 1 "GND" H 9950 9900 50  0000 C CNN
-F 2 "" H 9950 10050 50  0001 C CNN
-F 3 "" H 9950 10050 50  0001 C CNN
-	1    9950 10050
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_DevBoard_A-rescue:+5V #PWR03
-U 1 1 5C16818E
-P 9600 9150
-F 0 "#PWR03" H 9600 9000 50  0001 C CNN
-F 1 "+5V" H 9600 9290 50  0000 C CNN
-F 2 "" H 9600 9150 50  0001 C CNN
-F 3 "" H 9600 9150 50  0001 C CNN
-	1    9600 9150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 9600 9950 9600
-Wire Wire Line
-	9950 9600 9950 9900
-Wire Wire Line
-	10150 9500 9600 9500
-Wire Wire Line
-	9600 9500 9600 9150
-Wire Wire Line
-	10150 9300 10050 9300
-Wire Wire Line
-	10050 9400 10150 9400
-$Comp
-L PCB_DevBoard_A-rescue:Conn_01x04 J2
-U 1 1 5C168384
-P 10350 7850
-F 0 "J2" H 10350 8050 50  0000 C CNN
-F 1 "Interconnect A" H 10350 7550 50  0000 C CNN
-F 2 "DevBoard:WolletInterconnect_THT_Angeled" H 10350 7850 50  0001 C CNN
-F 3 "" H 10350 7850 50  0001 C CNN
-	1    10350 7850
-	1    0    0    -1  
-$EndComp
 Text GLabel 10050 7750 0    60   BiDi ~ 0
 CAN-
 Text GLabel 10050 7850 0    60   BiDi ~ 0
@@ -363,22 +303,14 @@ $EndComp
 $Comp
 L PCB_DevBoard_A-rescue:+5V #PWR04
 U 1 1 5C168392
-P 9600 7600
-F 0 "#PWR04" H 9600 7450 50  0001 C CNN
-F 1 "+5V" H 9600 7740 50  0000 C CNN
-F 2 "" H 9600 7600 50  0001 C CNN
-F 3 "" H 9600 7600 50  0001 C CNN
-	1    9600 7600
+P 9400 7900
+F 0 "#PWR04" H 9400 7750 50  0001 C CNN
+F 1 "+5V" H 9400 8040 50  0000 C CNN
+F 2 "" H 9400 7900 50  0001 C CNN
+F 3 "" H 9400 7900 50  0001 C CNN
+	1    9400 7900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10150 8050 9950 8050
-Wire Wire Line
-	9950 8050 9950 8350
-Wire Wire Line
-	10150 7950 9600 7950
-Wire Wire Line
-	9600 7950 9600 7600
 Wire Wire Line
 	10150 7750 10050 7750
 Wire Wire Line
@@ -756,24 +688,13 @@ Wire Wire Line
 $Comp
 L PCB_DevBoard_A-rescue:C C14
 U 1 1 5F297810
-P 9600 8150
-F 0 "C14" H 9625 8250 50  0000 L CNN
-F 1 "1uF" H 9625 8050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9638 8000 50  0001 C CNN
-F 3 "" H 9600 8150 50  0001 C CNN
-	1    9600 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_DevBoard_A-rescue:C C15
-U 1 1 5F297D17
-P 9600 9700
-F 0 "C15" H 9625 9800 50  0000 L CNN
-F 1 "1uF" H 9625 9600 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9638 9550 50  0001 C CNN
-F 3 "" H 9600 9700 50  0001 C CNN
-	1    9600 9700
-	1    0    0    -1  
+P 9700 8250
+F 0 "C14" H 9725 8350 50  0000 L CNN
+F 1 "1uF" H 9725 8150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9738 8100 50  0001 C CNN
+F 3 "" H 9700 8250 50  0001 C CNN
+	1    9700 8250
+	0    1    1    0   
 $EndComp
 $Comp
 L PCB_DevBoard_A-rescue:C C10
@@ -857,26 +778,6 @@ Wire Wire Line
 	14550 2150 14550 2050
 Wire Wire Line
 	14550 2050 14400 2050
-Wire Wire Line
-	9600 8000 9600 7950
-Connection ~ 9600 7950
-Wire Wire Line
-	9600 8300 9600 8350
-Wire Wire Line
-	9600 8350 9950 8350
-Connection ~ 9950 8350
-Wire Wire Line
-	9950 8350 9950 8500
-Wire Wire Line
-	9600 9550 9600 9500
-Connection ~ 9600 9500
-Wire Wire Line
-	9600 9850 9600 9900
-Wire Wire Line
-	9600 9900 9950 9900
-Connection ~ 9950 9900
-Wire Wire Line
-	9950 9900 9950 10050
 Wire Wire Line
 	7350 9950 7350 10050
 $Comp
@@ -1651,4 +1552,133 @@ NoConn ~ 6800 1950
 NoConn ~ 4450 4250
 Wire Wire Line
 	6800 4350 7950 4350
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 6406ABD3
+P 10350 7950
+F 0 "J2" H 10430 7992 50  0000 L CNN
+F 1 "Conn_01x05" H 10430 7901 50  0000 L CNN
+F 2 "DevBoard:WolleyInterconnect_THT_Angeled" H 10350 7950 50  0001 C CNN
+F 3 "~" H 10350 7950 50  0001 C CNN
+	1    10350 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 7900 9400 8050
+Wire Wire Line
+	9950 8150 10150 8150
+Wire Wire Line
+	10150 8050 9400 8050
+$Comp
+L power:+BATT #PWR0105
+U 1 1 64106B30
+P 9600 7750
+F 0 "#PWR0105" H 9600 7600 50  0001 C CNN
+F 1 "+BATT" H 9615 7923 50  0000 C CNN
+F 2 "" H 9600 7750 50  0001 C CNN
+F 3 "" H 9600 7750 50  0001 C CNN
+	1    9600 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 7950 9600 7950
+Wire Wire Line
+	9600 7950 9600 7750
+Wire Wire Line
+	9950 8150 9950 8250
+Wire Wire Line
+	9850 8250 9950 8250
+Connection ~ 9950 8250
+Wire Wire Line
+	9950 8250 9950 8500
+Wire Wire Line
+	9550 8250 9400 8250
+Wire Wire Line
+	9400 8250 9400 8050
+Connection ~ 9400 8050
+Text GLabel 10050 9200 0    60   BiDi ~ 0
+CAN-
+Text GLabel 10050 9300 0    60   BiDi ~ 0
+CAN+
+$Comp
+L PCB_DevBoard_A-rescue:GND #PWR0106
+U 1 1 642032D2
+P 9950 9950
+F 0 "#PWR0106" H 9950 9700 50  0001 C CNN
+F 1 "GND" H 9950 9800 50  0000 C CNN
+F 2 "" H 9950 9950 50  0001 C CNN
+F 3 "" H 9950 9950 50  0001 C CNN
+	1    9950 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_DevBoard_A-rescue:+5V #PWR0107
+U 1 1 642032DC
+P 9400 9350
+F 0 "#PWR0107" H 9400 9200 50  0001 C CNN
+F 1 "+5V" H 9400 9490 50  0000 C CNN
+F 2 "" H 9400 9350 50  0001 C CNN
+F 3 "" H 9400 9350 50  0001 C CNN
+	1    9400 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 9200 10050 9200
+Wire Wire Line
+	10050 9300 10150 9300
+$Comp
+L PCB_DevBoard_A-rescue:C C15
+U 1 1 642032E8
+P 9700 9700
+F 0 "C15" H 9725 9800 50  0000 L CNN
+F 1 "1uF" H 9725 9600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9738 9550 50  0001 C CNN
+F 3 "" H 9700 9700 50  0001 C CNN
+	1    9700 9700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 642032F2
+P 10350 9400
+F 0 "J1" H 10430 9442 50  0000 L CNN
+F 1 "Conn_01x05" H 10430 9351 50  0000 L CNN
+F 2 "DevBoard:WolleyInterconnect_THT_Angeled" H 10350 9400 50  0001 C CNN
+F 3 "~" H 10350 9400 50  0001 C CNN
+	1    10350 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 9350 9400 9500
+Wire Wire Line
+	9950 9600 10150 9600
+Wire Wire Line
+	10150 9500 9400 9500
+$Comp
+L power:+BATT #PWR0108
+U 1 1 642032FF
+P 9600 9200
+F 0 "#PWR0108" H 9600 9050 50  0001 C CNN
+F 1 "+BATT" H 9615 9373 50  0000 C CNN
+F 2 "" H 9600 9200 50  0001 C CNN
+F 3 "" H 9600 9200 50  0001 C CNN
+	1    9600 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 9400 9600 9400
+Wire Wire Line
+	9600 9400 9600 9200
+Wire Wire Line
+	9950 9600 9950 9700
+Wire Wire Line
+	9850 9700 9950 9700
+Connection ~ 9950 9700
+Wire Wire Line
+	9950 9700 9950 9950
+Wire Wire Line
+	9550 9700 9400 9700
+Wire Wire Line
+	9400 9700 9400 9500
+Connection ~ 9400 9500
 $EndSCHEMATC
