@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "DevBoard A"
-Date "2020-07-27"
-Rev ""
-Comp "Knekt Technologies AB"
+Title "DevECU"
+Date "2023-05-09"
+Rev "2.0"
+Comp "Knektium AB"
 Comment1 ""
 Comment2 ""
 Comment3 ""
